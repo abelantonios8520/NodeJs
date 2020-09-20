@@ -1,0 +1,1 @@
+["DIM*3*0.00","DIM*4*0.00","DIM*5*0.00","DIM*6*0.00","DIM*7*0.00","DIM*8*0.00","Dout*0*Open","Dout*0*Close","Dout*0*Close","Dout*0*Close","GSM*SIGNAL*14.00","Arm/Disarm*Status*0.00","Voltage*External*12.32"]

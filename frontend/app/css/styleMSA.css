@@ -1,0 +1,72 @@
+body {
+    font-family: "open sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #eeeeee;
+    font-size: 13px;
+    color: #676a6c;
+    overflow-x: hidden;
+}
+.white-bg {
+    background-color: #5cb460;
+}
+.footer {
+    background: none repeat scroll 0 0 #5cb460;
+    border-top: 1px solid #e7eaec;
+    bottom: 0;
+    left: 0;
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    color: #fff;
+}
+#wrapper {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: #000;
+}
+.text-muted {
+    color: #fff;
+}
+.nav.navbar-right > li > a {
+    color: #fff;
+}
+
+
+.menumsa {
+    background-color: #000;
+    color: white;
+}
+.navbar-default .nav > li > a:hover, .navbar-default .nav > li > a:focus {
+    background-color: #eee;
+    color: black;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    background-color: #293846;
+}
+.nav > li > a {
+    color: #a7b1c2;
+    font-weight: 600;
+    padding: 14px 20px 14px 25px;
+}
+.nav>li>a {
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+}
+a:hover, a:focus {
+    text-decoration: none;
+}
+a:focus, a:hover {
+    color: #23527c;
+    text-decoration: underline;
+}
+a:active, a:hover {
+    outline: 0;
+}
+.nav > li.active {
+    border-left: 4px solid #5cb460;
+    background: #293846;
+}
+.fondo-verde-msa {
+    background: #5cb460;
+}

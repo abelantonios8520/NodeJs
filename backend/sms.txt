@@ -1,0 +1,1 @@
+{"number":" 51918816145","port":"3606","text":"DO0:Close;\r\nDO1:Open;\r\nDO2:Close;\r\nDO3:Close;\r\n","time":"01/08/2018 8:50:03PM","name":"No asignado"}
