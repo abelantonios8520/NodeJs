@@ -1,8 +1,6 @@
 var WebSocketServer = require('websocket').server;
 var http = require('http');
 
-//require('./BaseDatos/accesoDatos');
-
 var server = http.createServer(function(request, response) {
 	response.writeHead(200);
 	response.write("Online_Auth:active;8087");
