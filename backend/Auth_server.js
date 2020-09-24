@@ -1,5 +1,6 @@
 var WebSocketServer = require('websocket').server;
 var http = require('http');
+const datos = require('./BaseDatos/conexionDatos');
 
 var server = http.createServer(function(request, response) {
 	response.writeHead(200);
@@ -9,19 +10,6 @@ var server = http.createServer(function(request, response) {
 server.listen(8087, function() {
 	console.log("Online_Auth:active:8087");
 });
-
-/* MongoClient("usuario_admin@m2m.com",JSON.stringify({"user":"admin@m2m.com","rol":"1","pass":"m2mdemo","name":"Administrador"}),function(){
-	console.log("Bien: asignación de cuenta principal con credenciales 'admin@m2m.com' clave 'm2mdemo'");
-})
-
- MongoClient("usuario_superadmin@m2m.com",JSON.stringify({"user":"superadmin@m2m.com","rol":"2","pass":"m2mdemo","name":"Super Administrador"}),function(){
-	console.log("Bien: Ya se ha creado el usuario superadmin con credenciales 'superadmin@m2m.com' clave 'm2mdemo'");
-})
-
- MongoClient("usuario_supervisor@m2m.com",JSON.stringify({"user":"supervisor@m2m.com","rol":"3","pass":"m2mdemo","name":"supervisor"}),function(){
-	console.log("Bien: Ya se ha creado el usuario supervisor con credenciales 'supervisor@m2m.com' clave 'm2mdemo' ");
-})*/
-
 
 wsServer = new WebSocketServer({
 	maxReceivedFrameSize: 2048, //bytes

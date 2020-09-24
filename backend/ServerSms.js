@@ -1,6 +1,7 @@
 //http://localhost:3000/api/add-sms?number=4167638750&port=3606&text=AIN1 Ultra-High Value Alarm;Current is 14.43Relay X is OFFAC&time=18/04/2018 9:77:13PM
 
 var express = require('express');
+const datos = require('./BaseDatos/conexionDatos');
 
 //Inicialización
 var app = express();
