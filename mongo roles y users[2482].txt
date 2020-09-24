@@ -1,0 +1,46 @@
+arrancas mongo
+
+>mongod.exe --storageEngine=mmapv1
+
+ejecutar mongo solo para crear usuario
+
+>mongo.exe
+
+creas user
+
+>use admin
+db.createUser(
+  {
+    user: "m2mroot007",
+    pwd: "m2madmin007",
+    roles: [ { role: "readWriteAnyDatabase", db: "admin" } ]
+  }
+)
+
+entro con credenciales 
+
+>mongo -u m2mroot007 -pm2madmin007 --authenticationDatabase admin
+
+elimino user
+
+>use admin
+>db.dropUser("m2mroot007", {w: "majority", wtimeout: 5000})
+
+creo colecciones
+
+>db.createCollection('users');
+
+inserto documentos
+
+> db.users.insert( {
+    "email": "admin@m2m.com",
+    "passw0rd": "m2mdemo",
+    "name": "Cuenta demo",
+    "rol": "1"
+    })
+
+>db.users.find({"email":"admin@m2m.com"});
+
+
+/home/m2m/m2m262act/backend
+
